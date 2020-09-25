@@ -13,6 +13,9 @@ configMapGenerator:
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
+- name: manshanb/rsvpapp
+  newName: manshanb/rsvpapp
+  newTag: 04759b3e6fe347a28f5d41bdb39b54f2a14e260b
 - name: teamcloudyuga/rsvpapp
   newName: nkhare/rsvpapp
   newTag: 30c024fe6395d69f33716c476f3d048940221122
